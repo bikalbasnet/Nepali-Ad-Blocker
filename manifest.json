@@ -1,0 +1,13 @@
+{
+  "name": "Nepali Ads Blocker",
+  "description": "Block Annoying ads from Nepali News sites. Works for only onlinekhabar.com in this version",
+  "version": "0.1",
+  "content_scripts": [
+    {
+      "matches": ["https://www.onlinekhabar.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_end"
+    }
+  ],
+  "manifest_version": 2
+}
